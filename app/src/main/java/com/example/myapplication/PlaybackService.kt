@@ -50,14 +50,14 @@ class PlaybackService : MediaLibraryService() {
     companion object {
         fun testMediaItem() = MediaItem.Builder()
             .setMediaId("id")
-            .setUri("https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/02_-_Geisha.mp3".toUri())
+            .setUri("http://mediaserv21.live-streams.nl:8000/live".toUri())
             .setMediaMetadata(
                 MediaMetadata.Builder()
                     .setTitle("Test title")
                     .setArtist("Test artist")
                     .setIsBrowsable(false)
                     .setIsPlayable(true)
-                    .setArtworkUri("https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/art.jpg".toUri())
+                    .setArtworkUri("https://source.unsplash.com/0u_vbeOkMpk".toUri())
                     .setMediaType(MediaMetadata.MEDIA_TYPE_MUSIC)
                     .build()
             )
